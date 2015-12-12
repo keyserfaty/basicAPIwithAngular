@@ -1,0 +1,29 @@
+{
+  "name": "basic-api",
+  "version": "0.0.3",
+  "private": false,
+  "description": "Just a Basic API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "nodemon server/server.js",
+    "populatedb": ""
+  },
+  "authors": [
+    "Belen Curcio",
+    "Karen Serfaty"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.0.6",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongodb": "^1.4.0",
+    "mongoose": "^4.1.6",
+    "morgan": "^1.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okbel/basicAPI.git"
+  }
+}
