@@ -12,9 +12,12 @@
 
 <body ng-app="BasicApp">
 
-  <section id="main" ng-controller="MainCtrl">
+  <section id="main" ng-controller="MainCtrl as main">
     <div ng-include=" 'sections/header/header.html' "></div>
     <section class="container">
+      <h1>
+        {{ main.title }}
+      </h1>
       <div ng-view></div>
     </section>
     <div ng-include=" 'sections/footer/footer.html' "></div>
@@ -24,15 +27,17 @@
   <script src="bower_components/angular-route/angular-route.min.js"></script>
   <script src="bower_components/lodash/lodash.min.js"></script>
   <script src="bower_components/restangular/dist/restangular.min.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.min.js"></script>
 
   <script src="app.js"></script>
-  <script src="components/dropdown/dropdown.directives.js"></script>
   <script src="components/modal/modal.directives.js"></script>
+  <script src="components/dropdown/dropdown.directives.js"></script>
   <script src="partials/posts/posts.controller.js"></script>
   <script src="partials/posts/posts.directives.js"></script>
   <script src="partials/posts/post/post.controller.js"></script>
   <script src="partials/posts/post/post.directives.js"></script>
   <script src="sections/main/main.controller.js"></script>
+  <script src="commons/api.services.js"></script>
 
 </body>
 

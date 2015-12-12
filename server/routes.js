@@ -3,11 +3,10 @@
 const
 	express = require('express'),
 	router =  express.Router(),
-	posts = require('./post/post.controller');
+	path = require('path');
 
-router.get('/', function(req, res){
-	res.status(200).send("Welcome to BasicAPI!");
-});
+const
+	posts = require('./post/post.controller');
 
 /*
 Following Ember URL Conventions
@@ -19,11 +18,14 @@ Create	POST	/photos
 Delete	DELETE	/photos/123
 */
 
-router.get('/posts/:_id', posts.get);
-router.get('/posts', posts.list);
-router.put('/posts/:_id', posts.edit);
-router.post('/posts', posts.add);
-router.delete('/posts/:_id', posts.del);
+router.get('/api/post/:_id', posts.get);
+router.get('/api/posts', posts.list);
+router.put('/api/post/:_id', posts.edit);
+router.post('/api/posts', posts.add);
+router.delete('/api/post/:_id', posts.del);
+router.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, '../client/index.html'));
+});
 
 
 module.exports = router;

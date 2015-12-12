@@ -1,0 +1,12 @@
+<section>
+  <h2>{{ posts.title }}</h2>
+  <article class="post" ng-repeat="post in posts.posts">
+    <h3>
+      <a ng-href="/post/{{ post._id }}">
+        {{ post.title }}
+      </a>
+    </h3>
+
+    <p>{{ post.body }}</p>
+  </article>
+</section>
