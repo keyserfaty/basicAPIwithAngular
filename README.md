@@ -1,3 +1,7 @@
+----
+💀 This will no longer receive updates. I don't agree with most of the practices I used in this repo today :)
+----
+
 ## Basic API with Angular.js front-end ##
 
 This is a version of [Basic API](https://github.com/okbel/basicAPI) with some minor changes in the back-end and a front-end build with Angular.js and [Restangular](https://github.com/mgonto/restangular).
