@@ -1,6 +1,6 @@
-----
-💀 This will no longer receive updates. I don't agree with most of the practices I used in this repo today :)
-----
+
+> 💀 This will no longer receive updates. I don't agree with most of the practices I used in this repo today :)
+
 
 
 
